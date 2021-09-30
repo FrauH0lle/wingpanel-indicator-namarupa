@@ -20,7 +20,7 @@ if indicator_dir_cmd.returncode() != 0
   message ('Indicator directory not found')
 endif
 
-indicator_dir = indicator_dir_cmd.stdout().strip()
+indicator_dir = join_paths(get_option('prefix'), 'lib/wingpanel')
 
 # Other configs
 conf = configuration_data()
