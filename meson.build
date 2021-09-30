@@ -58,5 +58,5 @@ shared_module(
         meson.source_root() + '/vapi/config.vapi'
     ],
     install: true,
-    install_dir : wingpanel_dep.get_pkgconfig_variable('indicatorsdir')
+    install_dir : indicator_dir
 )
